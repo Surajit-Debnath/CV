@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+}
+
+.top-line {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    black,
+    #00ff00,
+    #00ffff,    
+    #00ff00,
+    black
+  );
+}   
+
+h1{
+  font-family: 'Orbitron', sans-serif;
+   padding-left: 37vw;
+}
+h2{
+   font-family: 'Orbitron', sans-serif;
+}
+p{
+  padding-left: 39vw;
+}
+/* phone */
+.phone-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.4s ease;
+    }
+
+    .number {
+      color: #00ff00;
+        font-family: 'Orbitron', sans-serif;
+      margin-left: 10px;
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: all 0.4s ease;
+    }
+
+    .active .icon {
+      transform: translateX(-20px);
+    }
+
+    .active .number {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+
+
+/* email */
+    .email-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.icon {
+  width: 50px;
+  height: 50px;
+  fill: #00ff00;
+  transition: transform 0.4s ease;
+}
+
+
+.email {
+  margin-left: 10px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s ease;
+
+  /* Casio style */
+  font-family: 'Courier New', monospace;
+  color: #00ff00;
+  letter-spacing: 2px;
+}
+
+
+.active .icon {
+  transform: translateX(-20px);
+}
+
+.active .email {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+.contact{
+ margin-top: 10vh;
+}
+
+.linkedin-icon {
+  width: 30px;
+  height: 30px;
+  fill: white; 
+  cursor: pointer;
+  margin-left: 1vw;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.2);
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.github-icon:hover {
+  transform: scale(1.15);
+
+}
+.Developer{
+  margin-left: 20vw;
+   font-family: 'Exo 2', sans-serif;
+  text-shadow: 0 0 5px #00ffcc;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.hacker-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 25px #00ff00;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #00ff00;
+  }
+  to {
+    box-shadow: 0 0 25px #00ff00, 0 0 40px #00ff00;
+  }
+}
+
+.common{
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+  line-height: 1.7;
+   max-width: 60vw;
+}
+
+.skills-list strong {
+  color: #00ffcc;
+}
+
+.projects {
+  max-width: 800px;
+  margin: auto;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+}
+
+.project {
+  margin-bottom: 30px;
+  border-left: 2px solid #00ff00;
+  padding-left: 15px;
+}
+
+.project h3 {
+  margin: 0;
+  color: #00ffcc;
+   font-family: 'Orbitron', sans-serif;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.project ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+
+
+.education {
+  max-width: 800px;
+  margin: auto;
+  color: #00ff00;
+  font-family: "Fira Code", monospace;
+}
+
+.edu-item {
+  margin-bottom: 25px;
+  border-left: 2px solid #00ff00;
+  padding-left: 15px;
+}
+
+.edu-item h3 {
+  margin: 0;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.inst {
+  margin: 4px 0;
+}
+
+.meta {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.edu-item ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
